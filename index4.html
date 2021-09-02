@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo de ejemplo</title>
+    <link rel="stylesheet" href="css/primer_estilo.css" />
 </head>
 <body>
     <header>
@@ -25,9 +26,9 @@
     <main>
         <h1>FORMULARIO DE PRUEBA</h1>
         <form>
-            <label>Nombre:</label>
+            <label for="nombre">Nombre:</label>
             <br />
-            <input type="text" name="txtNombre" ></input>
+            <input type="text" id="nombre" name="txtNombre" placeholder="Ingresar usuario"></input>
             <br />
             <label>Correo electronico:</label>
             <br />
@@ -35,11 +36,56 @@
             <br />
             <label>Telefono:</label>
             <br />
-            <input type="number" name="txtTelefono"></input>
+            <input type="number" name="txtTelefono" min="999999" max="9999999999"></input>
+            <br /><br />
+            <label>Ingresar Fecha:</label>
             <br />
+            <input type="date" name="txtFecha"></input>
+            <br /><br />
+            <label>Ingresar Mes:</label>
+            <br />
+            <input type="month" name="txtMes"></input>
+            <br /><br />
+            <label>Ingresar Vehiculos:</label>
+            <br />
+            <select name="vehiculos">
+                <option value=1>Mercedes</option>
+                <option value=2>BMW</option>
+                <option value=3>Fiat</option>
+
+            </select>
+            <br /><br />
+            <label>Ingresar Observaciones:</label>
+            <br />
+            <textarea id="descripcion" name="descripcion" rows=3 cols=50>
+                ingresar observaciones
+            </textarea>
+            <br /><br />
+
             <input type="submit" value="Guardar">
         </form>
-
+        <br /><br />
+        <center>
+        <h1>TABLA</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+            <tr>
+                <td>MATEMATICAS</td>
+                <td>NC</td>
+                <td>NC</td>
+                <td>6-8</td>
+                <td>6-8</td>
+                <td>6-8</td>
+            </tr>
+        </table>
+        </center>
     </main>
     <br />
     <br />
